@@ -1,7 +1,7 @@
 import org.junit.Test
 
 def cutter[A](n: Integer): List[A] => (List[A], List[A]) =
-  (l: List[A]) => (l.take(2), l.drop(2))
+  (l: List[A]) => (l.take(n), l.drop(n))
 
 def condition[A](n: Integer): List[A] => Boolean =
   (l: List[A]) => (l.length >= n)
